@@ -39,12 +39,12 @@ class SILab2Test {
 		ex = assertThrows(RuntimeException.class, () -> newOb.function(Arrays.asList(new Time(-1, 0, 0))));
 		assertEquals(ex.getMessage(), "The hours are smaller than the minimum");
 		ex = assertThrows(RuntimeException.class, () -> newOb.function(Arrays.asList(new Time(25, 0, 0))));
-        assertEquals(ex.getMessage(), "The hours are grater than the maximum");
+		assertEquals(ex.getMessage(), "The hours are grater than the maximum");
 		ex = assertThrows(RuntimeException.class, () -> newOb.function(Arrays.asList(new Time(1, -1, 0))));
 		assertEquals(ex.getMessage(), "The minutes are not valid!");
 		assertEquals(Arrays.asList(3600), newOb.function(Arrays.asList(new Time(1, 0, 0))));
 		ex = assertThrows(RuntimeException.class, () -> newOb.function(Arrays.asList(new Time(1, 0, -1))));
-        assertEquals(ex.getMessage(), "The seconds are not valid");
+		assertEquals(ex.getMessage(), "The seconds are not valid");
 		assertEquals(Arrays.asList(24*3600), newOb.function(Arrays.asList(new Time(24, 0, 0))));
 		ex = assertThrows(RuntimeException.class, () -> newOb.function(Arrays.asList(new Time(24, 1, 0))));
 		assertEquals(ex.getMessage(), "The time is greater than the maximum");
