@@ -1,7 +1,7 @@
 # Лаб 2 - Никола Личовски 196046 
 
 ### 2. Control Flow Graph
-![CFG](https://raw.githubusercontent.com/NikolaLichovski/SI_lab2_196046/7dfe8938f801a91c5a64255ec6d299279c703ee5/cflowGraph.png)
+![CFG](https://raw.githubusercontent.com/NikolaLichovski/SI_lab2_196046/master/cflowGraph.png)
 
 ### 3. Цикломатска комплексност
 цикКом = брРабови - брТемиња + 2*поврзаниКомпоненти : C = 25 - 20 + 2*1 = 5 + 2 = 7
